@@ -1,0 +1,6 @@
+Name,Age,YearsAtCompany,MonthlyIncome,JobSatisfaction,WorkLifeBalance,OverTimeHours,DistanceFromHome_km,PromotionLast5Years,CustomFeature,CustomFeatureValue,Department
+Zara Extreme,22,0,0,1,1,240,200,0,"AttritionScore",-999,Research
+Leon HighFly,28,0,200000,4,4,500,2,0,"MoonlightJob","Yes",Sales
+Maya LowPay,31,0,500,1,1,80,150,0,"StressIndex",-10,Support
+Otto Normal,40,15,6000,3,3,0,10,1,,
+Quinn Border,35,2,3999,2,2,11,26,0,Workload,"-5",Operations

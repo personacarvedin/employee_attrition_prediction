@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prediction Input</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+        }
+        .container {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding: 40px;
+        }
+        .text-primary { color: #007bff !important; }
+        .card-header-custom {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+        #customFeatureGroup {
+            background-color: #f0f8ff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 2px dashed #17a2b8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container bg-white shadow-lg rounded p-5">
+        <h1 class="text-center text-primary mb-5"><i class="fas fa-search"></i> Predict Attrition Risk</h1>
+
+        <div class="row g-4">
+            <!-- CSV UPLOAD CARD -->
+            <div class="col-md-6">
+                <div class="card border-success h-100">
+                    <div class="card-header bg-success text-white">
+                        <i class="fas fa-upload"></i> 1. Upload Employee Data (CSV)
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <p class="card-text">Upload a standardized CSV file for batch risk assessment. Only the first few rows will be displayed in the results summary.</p>
+                        <form method="POST" action="{{ url_for('predict') }}" enctype="multipart/form-data">
+                            <div class="mb-3">
+                                <input type="file" name="file" accept=".csv" class="form-control" required>
+                            </div>
+                            <button type="submit" class="btn btn-success w-100 shadow-sm">Run Batch Prediction</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MANUAL INPUT CARD -->
+            <div class="col-md-6">
+                <div class="card border-primary h-100">
+                    <div class="card-header card-header-custom">
+                        <i class="fas fa-user-plus"></i> 2.Single Employee Entry
+                    </div>
+                    <div class="card-body">
+                        <form method="POST" action="{{ url_for('predict') }}">
+                            <div class="row">
+                                <!-- Standard Numeric Inputs -->
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Age:</label>
+                                    <input type="number" name="age" class="form-control" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Years At Company:</label>
+                                    <input type="number" name="years" class="form-control" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Monthly Income:</label>
+                                    <input type="number" name="income" class="form-control" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">OverTime Hours (0 for No):</label>
+                                    <input type="number" name="ot" class="form-control" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Job Satisfaction (1-4):</label>
+                                    <input type="number" name="jobsat" min="1" max="4" class="form-control" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Work Life Balance (1-4):</label>
+                                    <input type="number" name="wlb" min="1" max="4" class="form-control" required>
+                                </div>
+                                
+                                <!-- FIXED: Custom Feature with BOTH Name AND Value -->
+                                <div class="col-12 mb-4" id="customFeatureGroup">
+                                    <h6 class="text-info mb-3">
+                                        <i class="fas fa-comments"></i> Custom Feature (Optional)
+                                        <small class="text-muted d-block mt-1">Add an additional data point about this employee</small>
+                                    </h6>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6 mb-2">
+                                            <label class="form-label fw-bold">Feature Name:</label>
+                                            <input 
+                                                type="text" 
+                                                name="custom_feature" 
+                                                placeholder="e.g., 'Burnout Level', 'Recently Promoted', 'Dark Circles'"
+                                                class="form-control"
+                                            >
+                                        </div>
+                                        <div class="col-md-6 mb-2">
+                                            <label class="form-label fw-bold">Feature Value:</label>
+                                            <input 
+                                                type="text" 
+                                                name="custom_feature_value" 
+                                                placeholder="e.g., 'High', 'Yes', 'Severe'"
+                                                class="form-control"
+                                            >
+                                        </div>
+                                    </div>
+                                    
+                                    <small class="text-muted d-block mt-2">
+                                        <i class="fas fa-lightbulb"></i> 
+                                        <strong>Examples:</strong> 
+                                        "Recently Promoted" = "Yes" | 
+                                        "Burnout Level" = "High" | 
+                                        "Dark Circles" = "Present"
+                                    </small>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 shadow-sm mt-2">Get Single Prediction</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-4">
+            <a href="{{ url_for('index') }}" class="btn btn-secondary btn-sm"><i class="fas fa-arrow-left"></i> Back to Methodology</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

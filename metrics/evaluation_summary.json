@@ -1,0 +1,58 @@
+{
+  "LogisticRegression": {
+    "accuracy": 0.84,
+    "precision": 0.81,
+    "recall": 0.88,
+    "f1": 0.84,
+    "roc_auc": 0.89
+  },
+  "DecisionTree": {
+    "accuracy": 0.82,
+    "precision": 0.80,
+    "recall": 0.83,
+    "f1": 0.81,
+    "roc_auc": 0.85
+  },
+  "RandomForest": {
+    "accuracy": 0.90,
+    "precision": 0.89,
+    "recall": 0.92,
+    "f1": 0.90,
+    "roc_auc": 0.95
+  },
+  "AdaBoost": {
+    "accuracy": 0.86,
+    "precision": 0.84,
+    "recall": 0.88,
+    "f1": 0.86,
+    "roc_auc": 0.90
+  },
+  "GradientBoosting": {
+    "accuracy": 0.88,
+    "precision": 0.86,
+    "recall": 0.90,
+    "f1": 0.88,
+    "roc_auc": 0.93
+  },
+  "SVC": {
+    "accuracy": 0.87,
+    "precision": 0.85,
+    "recall": 0.89,
+    "f1": 0.87,
+    "roc_auc": 0.91
+  },
+  "KNeighbors": {
+    "accuracy": 0.80,
+    "precision": 0.78,
+    "recall": 0.82,
+    "f1": 0.80,
+    "roc_auc": 0.84
+  },
+  "XGBoost": {
+    "accuracy": 0.91,
+    "precision": 0.90,
+    "recall": 0.93,
+    "f1": 0.91,
+    "roc_auc": 0.96
+  }
+}

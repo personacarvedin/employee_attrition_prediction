@@ -1,0 +1,5 @@
+Name,Age,YearsAtCompany,MonthlyIncome,JobSatisfaction,WorkLifeBalance,OverTimeHours,DistanceFromHome_km,PromotionLast5Years,CustomFeature,CustomFeatureValue
+Priya Singh,28,,,"Low","Poor","many hours",,No,"Workload","Severe"
+Marcus Brown,36,,,"Medium","Good","few","~10km",Yes,,
+Sofia Torres,33,,,"High","Very Good","0","5 km",Yes,"RecentAward","Yes"
+Lee Chen,26,,,"Very Low","Poor","overtime often",,No,,

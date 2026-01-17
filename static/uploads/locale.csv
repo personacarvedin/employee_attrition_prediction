@@ -1,0 +1,6 @@
+Name,Age,YearsAtCompany,MonthlyIncome,JobSatisfaction,WorkLifeBalance,OverTimeHours,DistanceFromHome_km,PromotionLast5Years,CustomFeature,CustomFeatureValue
+Ana García,29,"3 años","€3.200,50","Baja (1)","Mala (1)","12 h","30 km","No",,
+Björn Svensson,41,"10 yrs","$6,500.00","Very High (4)","Very Good (4)","0","10 km","Yes","Recently Promoted","Yes"
+Carlo Rossi,27,"1","€3.200","Low","Low","20 ore","40 km","No","Dark Circles","Present"
+Daria Ivanova,34,"4","4.800,75€","3","3","6 ore","15 km","0",,
+Eve O'Reilly,50,"8","£7,000","High","Very Good","2h","5 km","Yes","WFH","Yes"

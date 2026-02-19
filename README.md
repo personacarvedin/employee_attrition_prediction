@@ -7,6 +7,12 @@ A machine learning system that identifies employees at risk of leaving by analyz
 
 Employee attrition disrupts business stability and drives up operational costs. This project uses machine learning on synthetic behavioural employee data to predict attrition risk and provide interpretable, actionable insights for HR teams.
 
+This project is also published as a public dataset on Kaggle:
+
+Kaggle Dataset: https://www.kaggle.com/datasets/personacarved/employee-attrition-dataset
+
+The dataset includes the synthetic employee behavioural data used in this project, enabling others to explore, benchmark, and build upon the model.This publication demonstrates the end-to-end ownership of the project - from data generation and validation to public release and reproducible machine learning experimentation.
+
 **Key Features:**
 - Synthetic dataset generation for privacy-safe modeling
 - 8 ML models trained and compared head-to-head
@@ -183,6 +189,26 @@ age,department,job_role,monthly_income,overtime,years_at_company,...
 ```
 
 > Column names must match the feature names used during training. Refer to `data/employees.csv` for the full schema.
+
+---
+
+## Kaggle Dataset Contribution
+
+The synthetic employee attrition dataset used in this project is publicly available on Kaggle:
+
+🔗 https://www.kaggle.com/datasets/personacarved/employee-attrition-dataset
+
+### Dataset Highlights
+- Privacy-safe synthetic employee behavioural data
+- Cleaned and structured for ML use
+- Suitable for classification benchmarking
+- Ready-to-use CSV format
+
+This allows researchers, students, and practitioners to:
+- Reproduce results
+- Train alternative models
+- Benchmark against other attrition datasets
+- Use it for academic or portfolio projects
 
 ---
 

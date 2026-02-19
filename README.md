@@ -75,7 +75,7 @@ employee-attrition/
 
 ---
 
-## Setup & Installation
+## Setup and Installation
 
 **Prerequisites:** Python 3.8+, pip
 
@@ -195,7 +195,7 @@ age,department,job_role,monthly_income,overtime,years_at_company,...
 
 The synthetic employee attrition dataset used in this project is publicly available on Kaggle:
 
-🔗 https://www.kaggle.com/datasets/personacarved/employee-attrition-dataset
+https://www.kaggle.com/datasets/personacarved/employee-attrition-dataset
 
 ### Dataset Highlights
 - Privacy-safe synthetic employee behavioural data
@@ -211,7 +211,7 @@ This allows researchers, students, and practitioners to:
 
 ---
 
-## Results & Evaluation
+## Results and Evaluation
 
 Model performance is stored in `results/evaluation.csv`. Key visualizations generated:
 

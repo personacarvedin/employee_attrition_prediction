@@ -1,6 +1,6 @@
 # Predicting Employee Attrition Using Behavioural Data
 
-A machine learning system that identifies employees at risk of leaving by analyzing behavioural patterns. Built with a full data science pipeline — from synthetic data generation to an interactive Flask web application with SHAP-based interpretability.
+A machine learning system that identifies employees at risk of leaving by analyzing behavioural patterns. Built with a full data science pipeline - from synthetic data generation to an interactive Flask web application with SHAP-based interpretability.
 
 ## Overview
 

@@ -198,19 +198,19 @@ Model performance is stored in `results/evaluation.csv`. Key visualizations gene
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
-### 🏠 Homepage
-![Homepage](figures/homepage.png)
+### Homepage
+![Homepage](https://github.com/personacarvedin/employee_attrition_prediction/blob/main/figures/Homepage.png)
 
-### 📝 Prediction form Page
-![Data Input Page](figures/data_input.png)
+### Prediction form Page
+![Data Input Page](https://github.com/personacarvedin/employee_attrition_prediction/blob/main/figures/Preidiction_form_page.png)
 
-### 📊 Dashboard Chart
-![Dashboard Chart](figures/dashboard_chart.png)
+### Dashboard Chart
+![Dashboard Chart](https://github.com/personacarvedin/employee_attrition_prediction/blob/main/figures/Dashboard_chart.png)
 
-### 📋 Attrition Table
-![Attrition Table](figures/attrition_table.png)
+### Attrition Table
+![Attrition Table](https://github.com/personacarvedin/employee_attrition_prediction/blob/main/figures/Attrition_table.png)
 
 ---
 
